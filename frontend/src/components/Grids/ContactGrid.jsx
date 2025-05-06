@@ -49,7 +49,7 @@ export default function ContactGrid() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <section className="max-w-6xl mx-auto p-6">
       <h2 className="text-2xl font-bold text-gray-800 mb-2 md:text-3xl">
         Connect With Us
       </h2>
@@ -187,6 +187,6 @@ export default function ContactGrid() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
