@@ -47,18 +47,28 @@ const Footer = () => (
         {/* App Store Badges */}
         <div className="flex flex-col space-y-4 md:space-x-4 md:items-center md:space-y-0 md:flex-row">
           <div className="w-[35vw] h-[12vw] md:w-[10vw] md:h-[8vw]">
-              <img
-                src={GooglePlayBadge}
-                alt="Get it on Google Play"
-                className="w-full h-full object-cover cursor-pointer"
-              />
+            <img
+              src={GooglePlayBadge}
+              alt="Get it on Google Play"
+              className="w-full h-full object-cover cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.lifebankdevs.nerve&hl=en&gl=ZA",
+                  "_blank"
+                )
+              }
+            />
           </div>
+
           <div className="w-[35vw] h-[12vw] md:w-[10vw] md:h-[8vw]">
-              <img
-                src={AppStoreBadge}
-                alt="Download on the App Store"
-                className="w-full h-full object-cover cursor-pointer"
-              />
+            <img
+              src={AppStoreBadge}
+              alt="Download on the App Store"
+              className="w-full h-full object-cover cursor-pointer"
+              onClick={() =>
+                window.open("https://apps.apple.com/ng/app/nerve-by-lifebank/id6451122858", "_blank")
+              }
+            />
           </div>
         </div>
       </div>
@@ -70,16 +80,36 @@ const Footer = () => (
 
         {/* Social Icons */}
         <div className="flex space-x-6">
-          <a href="#" aria-label="Facebook">
+          <a
+            href="https://www.facebook.com/lifebankcares/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
             <FaFacebookF size={24} />
           </a>
-          <a href="#" aria-label="Twitter">
+          <a
+            href="https://x.com/LifeBankCares"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
             <FaTwitter size={24} />
           </a>
-          <a href="#" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/company/lifebankcares/?originalSubdomain=ng"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <FaLinkedinIn size={24} />
           </a>
-          <a href="#" aria-label="Instagram">
+          <a
+            href="https://www.instagram.com/lifebankcares/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
             <FaInstagram size={24} />
           </a>
         </div>

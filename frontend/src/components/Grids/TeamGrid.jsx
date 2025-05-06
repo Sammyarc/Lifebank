@@ -16,7 +16,7 @@ export default function TeamGrid() {
     {
       name: "Temie Giwa-Tubosun",
       title: "Group CEO",
-      linkedinUrl: "https://linkedin.com/in/temie",
+      linkedinUrl: "https://www.linkedin.com/in/temie-giwa-tubosun-61b18514/?originalSubdomain=ng",
       imageUrl: Temie,
       topOrnament: FirstOrnament,
       bottomOrnament: SecondOrnament,
@@ -24,7 +24,7 @@ export default function TeamGrid() {
     {
       name: "Ayo Olufemi Michael",
       title: "Co-Founder and Chief Technology Officer",
-      linkedinUrl: "https://linkedin.com/in/ayomichael",
+      linkedinUrl: "https://www.linkedin.com/in/michael-ayo-olufemi/?originalSubdomain=ng",
       imageUrl: Ay,
       topOrnament: FirstOrnament,
       bottomOrnament: SecondOrnament,
@@ -32,7 +32,7 @@ export default function TeamGrid() {
     {
       name: "Ayodele Adedayo",
       title: "VP Operations",
-      linkedinUrl: "https://linkedin.com/in/ayodele",
+      linkedinUrl: "https://www.linkedin.com/in/ayodele-adedayo-7773b0b7/?originalSubdomain=ng",
       imageUrl: Ayodele,
       topOrnament: FirstOrnament,
       bottomOrnament: SecondOrnament,
@@ -40,7 +40,7 @@ export default function TeamGrid() {
     {
       name: "Oladayo Afolabi",
       title: "VP Finance",
-      linkedinUrl: "https://linkedin.com/in/johnsmith",
+      linkedinUrl: "https://www.linkedin.com/in/afoladayo/",
       imageUrl: Afolabi,
       topOrnament: FirstOrnament,
       bottomOrnament: SecondOrnament,
@@ -48,7 +48,7 @@ export default function TeamGrid() {
     {
       name: "Aniekan A. Joseph",
       title: "VP Growth, Partnership & Innovations",
-      linkedinUrl: "https://linkedin.com/in/sarahjohnson",
+      linkedinUrl: "https://www.linkedin.com/in/aniekan-a-joseph-78b4b524/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       imageUrl: Aniekan,
       topOrnament: FirstOrnament,
       bottomOrnament: SecondOrnament,
@@ -56,7 +56,7 @@ export default function TeamGrid() {
     {
       name: "Ann Ngima",
       title: "Acting CEO of LifeBank, Kenya",
-      linkedinUrl: "https://linkedin.com/in/davidchen",
+      linkedinUrl: "https://www.linkedin.com/in/ann-ngima-3b0334176/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       imageUrl: Ann,
       topOrnament: FirstOrnament,
       bottomOrnament: SecondOrnament,
@@ -64,7 +64,7 @@ export default function TeamGrid() {
     {
       name: "Ajiserere Maria",
       title: "Director of Customer Health",
-      linkedinUrl: "https://linkedin.com/in/davidchen",
+      linkedinUrl: "https://www.linkedin.com/in/maria-ajiserere/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       imageUrl: Ajisere,
       topOrnament: FirstOrnament,
       bottomOrnament: SecondOrnament,
