@@ -33,9 +33,9 @@ const Footer = () => (
           <Link to={"/team"} className="hover:underline">
             Our Team
           </Link>
-          <a href="#" className="hover:underline">
+          <Link to={"/locations"} className="hover:underline">
             Locations
-          </a>
+          </Link>
           <a href="#" className="hover:underline">
             Our Impact
           </a>
