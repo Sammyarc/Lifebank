@@ -10,6 +10,7 @@ import Teams from "./Pages/Teams";
 import Contact from "./Pages/Contact";
 import Locations from "./Pages/Locations";
 import Impact from "./Pages/Impact";
+import Schedule from "./Pages/Schedule";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/locations" element={<Locations />} />
         <Route path="/impact" element={<Impact />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
     </Router>
   );
