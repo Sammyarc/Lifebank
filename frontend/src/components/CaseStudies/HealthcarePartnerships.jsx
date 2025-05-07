@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IoIosArrowRoundForward } from 'react-icons/io';
+import { motion } from "framer-motion";
 import Msd from "../../assets/Images/msd.png"
 import Oxygen from "../../assets/Images/oxygen_hub.png"
 import Skoll from "../../assets/Images/skoll.png"
@@ -107,7 +108,17 @@ export default function HealthcarePartnerships() {
                   >
                     Read More
                     <span className="ml-2 border border-red-600 rounded-full p-1">
-                      <IoIosArrowRoundForward size={24} />
+                    <motion.div
+                animate={{ x: [0, 5, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 1.5,
+                  ease: "easeInOut",
+                }}
+              >
+                <IoIosArrowRoundForward size={20} />
+              </motion.div>
                     </span>
                   </a>
                 </div>

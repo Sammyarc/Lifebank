@@ -44,7 +44,7 @@ const ImpactGrid = () => {
 
   return (
     <motion.section
-      className="py-16 px-[4vw] container mx-auto flex flex-col gap-[4vw] lg:flex-row md:px-0"
+      className="py-16 px-[4vw] max-w-6xl mx-auto flex flex-col items-center gap-[4vw] lg:flex-row md:px-0"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -84,7 +84,7 @@ const ImpactGrid = () => {
               <h2 className="text-base font-extrabold md:text-lg">
                 {item.title}
               </h2>
-              <p>{item.subtext}</p>
+              <p className="text-sm text-gray-600">{item.subtext}</p>
             </motion.div>
           ))}
         </div>
@@ -113,7 +113,7 @@ const ImpactGrid = () => {
           {[innovation, transport, processing].map((src, idx) => (
             <motion.div
               key={idx}
-              className={`w-1/3 h-full ${idx < 2 ? "border-r-4 border-white" : ""}`}
+              className={`w-1/3 h-full md:h-[12vw] lg:h-[10vw] ${idx < 2 ? "border-r-4 border-white" : ""}`}
               variants={itemVariants}
             >
               <img
