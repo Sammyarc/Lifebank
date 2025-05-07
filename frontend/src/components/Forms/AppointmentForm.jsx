@@ -121,7 +121,7 @@ export default function AppointmentForm() {
               {formData.time}.
             </p>
             <button
-              className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
+              className="mt-6 bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded"
               onClick={() => setIsSubmitted(false)}
             >
               Book Another Appointment
@@ -306,7 +306,7 @@ export default function AppointmentForm() {
                         onChange={handleChange}
                         onClick={handleClick}
                         onBlur={handleBlur}
-                        className={`w-full px-4 py-2 border rounded-md appearance-none focus:outline-none focus:ring-1 ${
+                        className={`w-full px-4 py-2 border bg-transparent rounded-md appearance-none focus:outline-none focus:ring-1 ${
                           errors.purpose
                             ? "border-red-500 focus:ring-red-200"
                             : "border-gray-300 focus:ring-gray-600"
@@ -351,7 +351,7 @@ export default function AppointmentForm() {
                       name="date"
                       value={formData.date}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-1 ${
+                      className={`w-full px-4 py-2 bg-transparent border rounded-md focus:outline-none focus:ring-1 ${
                         errors.date
                           ? "border-red-500 focus:ring-red-200"
                           : "border-gray-300 focus:ring-gray-600"
@@ -374,7 +374,7 @@ export default function AppointmentForm() {
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-1 ${
+                      className={`w-full px-4 py-2 bg-transparent border rounded-md focus:outline-none focus:ring-1 ${
                         errors.time
                           ? "border-red-500 focus:ring-red-200"
                           : "border-gray-300 focus:ring-gray-600"
