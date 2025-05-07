@@ -29,30 +29,9 @@ body {
   animation: move-up 0.3s ease-out;
 }
 
-@keyframes scroll {
-  to {
-    transform: translateX(calc(-50% - 0.75rem));
-  }
-}
-
-.scroller[data-animated="true"] .scroller__inner {
-  animation: scroll 10s linear infinite;
-}
-
-.scroller[data-animated="true"]:hover .scroller__inner,
-.scroller[data-animated="true"]:focus-within .scroller__inner {
-  animation-play-state: paused;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .scroller[data-animated="true"] .scroller__inner {
-    animation-play-state: paused;
-  }
-}
-
-
 @keyframes pulse-dot {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
@@ -64,4 +43,73 @@ body {
 
 .pulse-dot {
   animation: pulse-dot 1s infinite ease-in-out;
+}
+
+.brand-container {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  gap: 1vw;
+}
+
+.brand-flex {
+  margin: 0.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  gap: 2vw;
+}
+
+.brand-logo {
+  width: 16vw;
+  height: 6.4vw;
+  padding: 1vw;
+  background-color: white;
+}
+
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  color: rgba(27, 38, 50, 0.6);
+}
+
+/* Seamless scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-102%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+@media screen and (max-width:768px) {
+  .brand-flex {
+    min-width: 250%;
+    margin-right: 4vw;
+  }
+  
+  .brand-logo {
+    width: 40vw;
+    height: 14vw;
+    padding: 1vw;
+    background-color: white;
+  }
 }
