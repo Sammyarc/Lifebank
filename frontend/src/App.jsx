@@ -9,6 +9,7 @@ import Careers from "./Pages/Careers";
 import Teams from "./Pages/Teams";
 import Contact from "./Pages/Contact";
 import Locations from "./Pages/Locations";
+import Impact from "./Pages/Impact";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/team" element={<Teams />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="/impact" element={<Impact />} />
       </Routes>
     </Router>
   );
