@@ -51,7 +51,7 @@ export default function HealthcarePartnerships() {
   ]);
 
   return (
-    <div className="max-w-6xl mx-auto px-[4vw] py-12">
+    <div className="max-w-6xl mx-auto px-[4vw] py-12 overflow-hidden">
           {/* Main Heading */}
           <h1
           className="text-3xl leading-[1.5] font-bold mb-4 md:text-center md:text-3xl lg:text-4xl"

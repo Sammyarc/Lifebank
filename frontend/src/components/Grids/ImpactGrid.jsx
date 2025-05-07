@@ -44,7 +44,7 @@ const ImpactGrid = () => {
 
   return (
     <motion.section
-      className="py-16 px-[4vw] container mx-auto flex flex-col gap-[4vw] md:flex-row md:px-0"
+      className="py-16 px-[4vw] container mx-auto flex flex-col gap-[4vw] lg:flex-row md:px-0"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -57,7 +57,7 @@ const ImpactGrid = () => {
       }}
     >
       {/* Left Section */}
-      <motion.div className="w-full flex flex-col md:w-1/2">
+      <motion.div className="w-full flex flex-col lg:w-1/2">
         <motion.h1
           variants={itemVariants}
           className="text-2xl leading-[1.5] font-bold mb-4 md:text-3xl lg:text-4xl"
@@ -92,7 +92,7 @@ const ImpactGrid = () => {
 
       {/* Right Image Section */}
       <motion.div
-        className="w-full grid grid-cols-1 md:w-1/2"
+        className="w-full grid grid-cols-1 lg:w-1/2"
         variants={{
           visible: {
             transition: {
