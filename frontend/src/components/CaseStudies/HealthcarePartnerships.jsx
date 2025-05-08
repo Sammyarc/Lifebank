@@ -9,6 +9,7 @@ import postpartum from "../../assets/Images/person-massaging-her-feet.jpg"
 import OxygenPlant from "../../assets/Images/oxygen hub plant.jpg"
 import youth from "../../assets/Images/low-angle-view-african-american-woman-with-armcrossing-gesture-participating-protest-human-rights.jpg"
 import Lab from "../../assets/Images/african-american-woman-scientist-holding-test-tube-laboratory.jpg"
+import { Link } from 'react-router-dom';
 
 export default function HealthcarePartnerships() {
   // Partnership data array for mapping
@@ -20,7 +21,7 @@ export default function HealthcarePartnerships() {
       logo: Msd,
       logoAlt: "MSD Logo",
       title: "MSD partnership to reduce\nPostpartum Hemorrhage in Africa",
-      link: "#"
+      link: "/impact/msd"
     },
     {
       id: 2,
@@ -29,7 +30,7 @@ export default function HealthcarePartnerships() {
       logo: Oxygen,
       logoAlt: "Oxygen Hub Logo",
       title: "Breathing Life into Healthcare:\nLifeBank's Oxygen Hub Partnership",
-      link: "#"
+      link: "/impact/oxygen"
     },
     {
       id: 3,
@@ -38,7 +39,7 @@ export default function HealthcarePartnerships() {
       logo: Skoll,
       logoAlt: "Partner Logo",
       title: "Youth Empowerment for Better Healthcare Equipment Access",
-      link: "#"
+      link: "/impact/skoll"
     },
     {
       id: 4,
@@ -47,12 +48,12 @@ export default function HealthcarePartnerships() {
       logo: Johnson,
       logoAlt: "Tech Partner Logo",
       title: "Transforming Blood Safety: SmartSystem's Blockchain Innovation",
-      link: "#"
+      link: "/impact/johnson"
     }
   ]);
 
   return (
-    <div className="max-w-6xl mx-auto px-[4vw] py-12 overflow-hidden">
+    <section className="max-w-6xl mx-auto px-[4vw] py-12 overflow-hidden" id='partnerships'>
           {/* Main Heading */}
           <h1
           className="text-3xl leading-[1.5] font-bold mb-4 md:text-center md:text-3xl lg:text-4xl"
@@ -102,8 +103,7 @@ export default function HealthcarePartnerships() {
                 
                 {/* Read More Button */}
                 <div className="flex justify-center mt-auto">
-                  <a 
-                    href={partnership.link} 
+                  <Link to={partnership.link} 
                     className="inline-flex items-center text-red-600 font-medium hover:text-red-700"
                   >
                     Read More
@@ -120,13 +120,13 @@ export default function HealthcarePartnerships() {
                 <IoIosArrowRoundForward size={20} />
               </motion.div>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

@@ -11,6 +11,10 @@ import Contact from "./Pages/Contact";
 import Locations from "./Pages/Locations";
 import Impact from "./Pages/Impact";
 import Schedule from "./Pages/Schedule";
+import Msd from "./Pages/Msd";
+import OxygenHub from "./Pages/OxygenHub";
+import Skoll from "./Pages/Skoll";
+import Johnson from "./Pages/Johnson";
 
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
         <Route path="/locations" element={<Locations />} />
         <Route path="/impact" element={<Impact />} />
         <Route path="/schedule" element={<Schedule />} />
+        <Route path="/impact/msd" element={<Msd />} />
+        <Route path="/impact/oxygen" element={<OxygenHub />} />
+        <Route path="/impact/skoll" element={<Skoll />} />
+        <Route path="/impact/johnson" element={<Johnson />} />
       </Routes>
     </Router>
   );
