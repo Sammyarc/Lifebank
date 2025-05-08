@@ -1,6 +1,5 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { BsFillDropletFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const CareersHero = () => {
